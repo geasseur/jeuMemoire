@@ -1,0 +1,35 @@
+.score,.jeu,.carte,.restart{
+  box-shadow: 3px 3px 3px black;
+  border: 2px solid #000;
+}
+
+.score{
+  height: 150px;
+  background-color: rgb(172, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.jeu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carte{
+  width: 23%;
+  height: 100px;
+  background-image: url(img/arriereCarte.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.restart{
+  height: 100px;
+  background-color: rgb(126, 32, 32);
+}
