@@ -24,9 +24,7 @@
 .carte{
   width: 23%;
   height: 100px;
-  background-image: url(img/arriereCarte.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-color: grey;
 }
 
 .restart{
