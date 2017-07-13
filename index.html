@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body onload="creationJeu()">
+    <body onload="pseudo()">
         <section class="score">
           <article class="joueur">
             <p id="pseudoJoueur">a</p>
@@ -23,10 +23,14 @@
           </article>
           <h1>Jeu de mémoire</h1>
           <article class="time">
-            <p id="timer"></p>
+            <p>essais restant</p>
+            <p id="compteur"></p>
           </article>
         </section>
         <section class="jeu">
+          <div id="message">
+            <p></p>
+          </div>
           <div class="carte" onclick="essais(0)"></div>
           <div class="carte" onclick="essais(1)"></div>
           <div class="carte" onclick="essais(2)"></div>
@@ -43,7 +47,7 @@
           <div class="carte" onclick="essais(13)"></div>
         </section>
         <section class ="restart">
-          <button id="restart">Nouvelle Partie</button>
+          <button onclick="nouvellePartie()" id ="restart">Nouvelle Partie</button>
         </section>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

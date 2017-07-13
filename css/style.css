@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+#message{
+  display: none;
+/*  position: absolute;*/
+}
+
 
 .jeu{
   display: flex;
@@ -28,6 +33,10 @@
 }
 
 .restart{
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
   height: 100px;
   background-color: rgb(126, 32, 32);
 }
