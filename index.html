@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body onload="creationJeu()">
+    <body onload="pseudo()">
         <section class="score">
           <article class="joueur">
             <p id="pseudoJoueur">a</p>
@@ -23,27 +23,31 @@
           </article>
           <h1>Jeu de mémoire</h1>
           <article class="time">
-            <p id="timer"></p>
+            <p>essais restant</p>
+            <p id="compteur"></p>
           </article>
         </section>
         <section class="jeu">
-          <div class="carte"></div>
-          <div class="carte"></div>
-          <div class="carte"></div>
-          <div class="carte"></div>
-          <div class="carte"></div>
-          <div class="carte"></div>
-          <div class="carte"></div>
-          <div class="carte"></div>
-          <div class="carte"></div>
-          <div class="carte"></div>
-          <div class="carte"></div>
-          <div class="carte"></div>
-          <div class="carte"></div>
-          <div class="carte"></div>
+          <div id="message">
+            <p></p>
+          </div>
+          <div class="carte" onclick="essais(0)"></div>
+          <div class="carte" onclick="essais(1)"></div>
+          <div class="carte" onclick="essais(2)"></div>
+          <div class="carte" onclick="essais(3)"></div>
+          <div class="carte" onclick="essais(4)"></div>
+          <div class="carte" onclick="essais(5)"></div>
+          <div class="carte" onclick="essais(6)"></div>
+          <div class="carte" onclick="essais(7)"></div>
+          <div class="carte" onclick="essais(8)"></div>
+          <div class="carte" onclick="essais(9)"></div>
+          <div class="carte" onclick="essais(10)"></div>
+          <div class="carte" onclick="essais(11)"></div>
+          <div class="carte" onclick="essais(12)"></div>
+          <div class="carte" onclick="essais(13)"></div>
         </section>
         <section class ="restart">
-          <button id="restart">Nouvelle Partie</button>
+          <button onclick="nouvellePartie()" id ="restart">Nouvelle Partie</button>
         </section>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

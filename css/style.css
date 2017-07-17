@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+#message{
+  display: none;
+/*  position: absolute;*/
+}
+
 
 .jeu{
   display: flex;
@@ -24,12 +29,14 @@
 .carte{
   width: 23%;
   height: 100px;
-  background-image: url(img/arriereCarte.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-color: grey;
 }
 
 .restart{
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
   height: 100px;
   background-color: rgb(126, 32, 32);
 }
