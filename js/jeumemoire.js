@@ -101,6 +101,8 @@ function finPartie(){
 }
 
 function nouvellePartie(){
+  compte = 15;
+  compteur.innerHTML = compte;
   pointJoueur = 0;
   pointInterface.innerHTML = pointJoueur;
   message.style.display = "none";
@@ -112,54 +114,3 @@ function nouvellePartie(){
   console.log("nouvelle partie");
   creationJeu();
 }
-
-/*
-function essais(nbCarte){
-    console.log(nbEssais);
-    listeCarte = document.getElementsByClassName("carte");
-    listeCarte[nbCarte].style.backgroundColor = randomCouleur[nbCarte];
-    nbEssais++;
-    if(nbEssais == 1){
-      test1 = nbCarte;
-      console.log(nbEssais);
-    }
-    else if (nbEssais ==2) {
-      test2 = nbCarte;
-      console.log(nbEssais);
-    }
-    if(nbEssais == 2){
-      console.log(test1,test2);
-      console.log(listeCarte[test1].style.backgroundColor);
-      console.log(listeCarte[test2].style.backgroundColor);
-    }
-    if(nbEssais == 2){
-      if(listeCarte[test1].style.backgroundColor == listeCarte[test2].style.backgroundColor){
-        alert("comparaison faite et reussite");
-        pointJoueur += 1;
-        document.getElementById("point").innerHTML = pointJoueur;
-        console.log(pointJoueur);
-        if (pointJoueur == 7) {
-          finPartie();
-        }
-      }
-      else{
-        alert("comparaison faite et echec");
-        setTimeout(function () {
-          cache(test1,test2);
-        }, 1000);
-      }
-    }
-
-}
-function cache(test1, test2){
-  listeCarte[test1].style.backgroundColor = "grey";
-  listeCarte[test2].style.backgroundColor = "grey";
-}
-
-function finPartie(){
-  for (var i = 0; i < listeCarte.length; i++) {
-    listeCarte[i].style.display = none;
-  }
-  document.getElementById("message").innerHtml = "vous avez gagné";
-}
-*/
