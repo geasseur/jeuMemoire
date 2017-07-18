@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+#point, #compteur{
+  text-align: center;
+}
+
 #message{
   display: none;
 /*  position: absolute;*/
@@ -27,7 +31,7 @@
 }
 
 .carte{
-  width: 20%;
+  width: 10%;
   height: 100px;
   background-color: grey;
   margin: 10px 5px;
@@ -44,8 +48,15 @@
 
 @media (min-width: 800px) {
   .carte{
+    height: 150px;
+    width: 11%;
+  }
+}
+
+@media (min-width: 600px) {
+  .carte{
     height: 200px;
-    width: 13%;
+    width: 12%;
   }
 }
 
