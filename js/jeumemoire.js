@@ -22,8 +22,8 @@ var test2 = 0;
 document.getElementById("point").innerHTML = pointJoueur;
 
 function pseudo(){
-  //var pseudo = prompt("entrez votre pseudo");
-  //document.getElementById("pseudoJoueur").innerHTML = pseudo;
+  var pseudo = prompt("entrez votre pseudo");
+  document.getElementById("pseudoJoueur").innerHTML = pseudo;
   creationJeu();
 }
 
